@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Київський метрополітен</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src = "img/logo.png" class = "logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#lines">Схема ліній</a></li>
+                <li><a href="#photo">Фотографії</a></li>
+                <li><a href="#feedback">Зворотній зв'язок</a></li>
+            </ul>
+        </nav>
+        <button id="theme">Змінити тему</button>
+    </header>
+    <div id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></div>
+    <main>
+        <h1>Ласкаво просимо до Київського метрополітену</h1>
+        <hr>
+        <section id="home">
+            <h2>Головна</h2>
+            <div class = "home">
+                <span>
+                    <p><strong>Київський метрополітен</strong> — <em><u>швидкісна позавулична, переважно підземна, транспортна система Києва.</u></em></p>
+                    <pre>Діють три лінії, експлуатаційна довжина яких становить 69,648 км, 52 станції із трьома підземними вузлами пересадки в центрі міста.
+Усі лінії електрифіковані постійною напругою 825 В, на них працюють 5-вагонні електропоїзди довжиною приблизно 100 м.
+Метрополітен відкритий для пасажирів щоденно з 05:30 до 23:00 <s>(05:30-00:31)</s>.
+Після відкриття 6 листопада 1960 року став <b>14-м метрополітеном в Європі і 3-м у СРСР.</b></pre>      
+                    <p>Архітектура станцій:
+                        <ul>
+                            <li>Чотири станції першої черги будівництва («Вокзальна», «Університет», «Хрещатик», «Арсенальна») визнані пам'ятками архітектури місцевого значення</li> 
+                            <li>Ще три станції («Дніпро», «Либідська», «Золоті ворота») мають статус «щойно виявлений об'єкт культурної спадщини».</li>
+                            <li>Автори станції «Золоті ворота» 1991 року були відзначені Державною премією України з архітектури</li>
+                        </ul>
+                    </p>
+                    <p>На всіх станціях Київського метрополітену присутнє 4G покриття операторів мобільного зв'язку <ol><li>Vodafone</li> <li>Київстар</li> <li>Lifecell</li></ol></p>
+                </span>
+            <div class = "home-img">
+                <img src="img/logo2.svg">
+                <img src="img/photo.jpg">
+            </div>
+            </div>
+            <div class = "home-bottom">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/waNu-1oCAdg?si=x_n0G6_Ue0jxlrbh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Станції</th>
+                        </tr>
+                        <tr>
+                            <th>Лінія</th>
+                            <th>Колір лінії</th>
+                            <th>Кількість станцій</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Святошинсько-броварська</td>
+                            <td bgcolor="red"></td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Оболонсько-теремківська</td>
+                            <td bgcolor="blue"></td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>Сирецько-Печерська</td>
+                            <td bgcolor="green"></td>
+                            <td>16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><hr>
+        </section>
+
+        <section id="lines">
+            <h2>Схема ліній</h2>
+            <center><img src ="img/lines.jpg" class = "lines"></center>
+            <code>                
+                console.log('Hello, World!');
+            </code>
+            <hr>
+        </section>
+
+        <section id="photo">
+            <h2>Фотографії</h2>
+            <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src = "img/slider/1.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/2.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/3.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/4.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/5.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/6.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/7.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/8.jpg"></li>
+                          <li class="splide__slide"><img src = "img/slider/10.jpg"></li>
+                      </ul>
+                </div>
+            </div>
+            <hr>
+        </section>
+
+        <section id="feedback">
+            <h2>Зворотній зв'язок</h2>
+            <form action="#" id ="feedback-form">
+                <label>Ім'я:</label>
+                <input type="text" name="name" required>
+
+                <label>Прізвище:</label>
+                <input type="text" name="lastname" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Повідомлення:</label>
+                <textarea name="message" rows="10" required></textarea>
+
+                <button>Відправити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h3>Контакти</h3>
+            <p><a href = "mailto:referent_n@metro.kyiv.ua">Email: referent_n@metro.kyiv.ua</a></p>
+            <p><a href ="tel:+380442384421">Телефон: (044) 238-44-21</a></p>
+        </div>
+        <div class = "links">
+            <h3>Посилання</h3>
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#lines">Схема ліній</a></li>
+                <li><a href="#photo">Фотографії</a></li>
+                <li><a href="#feedback">Зворотній зв'язок</a></li>
+            </ul>
+        </div>
+        <div class = "icons">
+            <p>&copy; 2024 Київський метрополітен. Усі права захищені.</p>
+            <a href = "https://www.facebook.com/kyivmetro/?locale=uk_UA" target ="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href = "https://x.com/kyivmetroalerts?s=20" target ="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href = "https://uk.wikipedia.org/wiki/%D0%9A%D0%B8%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D1%96%D1%82%D0%B5%D0%BD" target ="_blank"><i class="fa-brands fa-wikipedia-w"></i></a>
+            <a href = "https://t.me/Metro6" target ="_blank"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://kit.fontawesome.com/9630ec5f62.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

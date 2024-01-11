@@ -1,0 +1,234 @@
+body {
+    font-family: 'kyiv';
+    line-height: 1.6;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    color: #00cc00;
+}
+
+a:active{
+    color: #78f478;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    width:5%;
+}
+
+header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00cc00; 
+    color: #ffffff;
+    border: 2px solid #00cc00;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 10px;
+}
+
+main h2, main h1{
+    text-align: center;
+}
+
+section .home{
+    display: flex;
+    justify-content: space-between;
+}
+
+section .home-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section .home-img{
+    display:flex;
+    flex-direction: column;
+    width:250px;
+}
+
+section table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+section th, section td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+section th {
+    background-color: #333;
+    color: #fff;
+}
+
+section img.lines{
+    width:800px;
+}
+
+section .splide__slide img{
+    width:500px;
+}
+
+section form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+section form label::before{
+    content:"*";
+}
+
+section form input,
+section form textarea {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+section form input:focus,
+section form textarea:focus{
+    background-color:#eeeeee;
+}
+
+section form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00cc00; 
+    color: #ffffff;
+    border: 2px solid #00cc00;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+section form button:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer .links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    justify-content: center;
+}
+
+footer .links ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .icons i{
+    font-size: 30px;
+    padding:5px;
+}
+
+.theme-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+.theme-dark {
+    background-color: #232323;
+    color: #ffffff;
+}
+form .theme-light label {
+    color: #000000;
+}
+
+form.theme-dark label {
+    color: #ffffff;
+}
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.3s;
+    font-size: 20px;
+}
+
+#backToTop:hover {
+    background-color: #555;
+    transform: scale(1.2);
+}
+
+@font-face {
+    font-family: 'kyiv';
+    src: url('fonts/KyivTypeSans-VarGX.ttf');
+}
